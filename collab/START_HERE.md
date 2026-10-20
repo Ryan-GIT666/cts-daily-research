@@ -1,5 +1,7 @@
 # CTS｜GPT × Claude × Notion × GitHub 協作入口（2026-10-20）
 
+> **DEPRECATED / HISTORICAL PUBLIC COPY (2026-10-20):** Current CTS GPT × Claude collaboration and PAPER source of truth moved to **private** `Ryan-GIT666/cts-private` `main/collab/START_HERE.md`. This public branch is a legacy reference only. Public `gh-pages/latest.json` remains independent and research-only. No live order authority is granted here.
+
 > 此分支是**公開、安全、唯讀研究資料的協作示範**；不代表程式交易已啟用。正式 CTS 策略、個人風控數值與庫存資訊只保留私人 Notion 與 Windows 本機，不移到公開 GitHub。
 
 ## 資料權威（先讀）
