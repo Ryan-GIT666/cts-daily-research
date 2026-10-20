@@ -1,0 +1,35 @@
+name: CTS Public Research Contract (NO TRADING)
+on:
+  push:
+    branches:
+      - integration/cts-collab-v1
+    paths:
+      - "collab/**"
+      - "tools/validate_public_research.py"
+      - ".github/workflows/cts-collab-check.yml"
+      - "latest.json"
+  pull_request:
+    paths:
+      - "collab/**"
+      - "tools/validate_public_research.py"
+      - "latest.json"
+permissions:
+  contents: read
+jobs:
+  contract-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate public research and fail closed for trading
+        run: python tools/validate_public_research.py latest.json --report collab/validation_report.json
+      - name: Retain anonymous QA artifact (not committed)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cts-public-contract-report
+          path: collab/validation_report.json
+          retention-days: 7
+          if-no-files-found: warn
