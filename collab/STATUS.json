@@ -1,0 +1,48 @@
+{
+  "schema": "cts-collab-v1",
+  "updated_date": "2026-10-20",
+  "strategy_authority": {
+    "location": "Notion",
+    "version": "V5.2",
+    "url": "https://app.notion.com/p/3c943d9c613e8127aa28f3b0c9818bc1"
+  },
+  "windows_app": {
+    "stable": "V2.1.3",
+    "candidate": "V2.2",
+    "candidate_promoted": false
+  },
+  "public_research": {
+    "repository": "Ryan-GIT666/cts-daily-research",
+    "branch": "gh-pages",
+    "artifact": "latest.json",
+    "research_only": true,
+    "asof": "2026-10-20",
+    "universe_size": 2168,
+    "market_coverage": 68,
+    "coverage_verified": "public_file_only"
+  },
+  "collaboration": {
+    "branch": "integration/cts-collab-v1",
+    "claude_mode": "manual_review_free_or_optional_paid",
+    "notion_sync": "manual_via_authorized_connector",
+    "github_ci": "configured_pending_remote_run",
+    "gpt_role": "integration_review"
+  },
+  "trade_system": {
+    "live_order_capability_verified": false,
+    "broker_authenticated": false,
+    "shadow_test_complete": false,
+    "portfolio_reconciled": false,
+    "live_trading_enabled": false,
+    "trading_authorized": false,
+    "credentials_in_repository": false
+  },
+  "next_tasks": [
+    "Verify CI workflow run",
+    "Increase research source coverage and handle failed symbols",
+    "Complete backtest and out-of-sample evaluation",
+    "Reconcile real broker inventory privately on Windows",
+    "Build independent broker sandbox order-state tests",
+    "Review permission and budget before any live order capability"
+  ]
+}
