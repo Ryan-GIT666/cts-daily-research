@@ -26,5 +26,12 @@
 6. 賣單發送不等於成交；要有原生回報、部分成交、撤單、重連、冪等性與停機處理。
 7. 此 Repo 的交易狀態固定為 **DISABLED**，除非日後由使用者在自己的 Windows 上獨立設置權限並通過驗收。
 
+
+## 2026-10-20｜新的周期研究與正式API唯讀Gate
+- CTS V5.2 周期波動延展／5–15交易日複核／Shadow與實單安全門檻：[CTS_CYCLE_WAVE_AND_API_GATES_20261020.md](./CTS_CYCLE_WAVE_AND_API_GATES_20261020.md)。
+- Claude Free 可直接人工送審的獨立審查任務：[CLAUDE_CYCLE_REVIEW_20261020.md](./CLAUDE_CYCLE_REVIEW_20261020.md)。
+- Windows 本機已實測玉山模擬委託被接受、正式API登入和餘額/庫存唯讀。**尚未完成正式委託/成交對帳、撤單/部分成交/斷線防重送、20交易日Shadow；實盤AUTO_LIVE維持DISABLED。**
+- GitHub協作STATUS.json為機讀進度；公開研究只能作候選，真實券商持股、資金及下單資料完全不進GitHub/Claude。
+
 ## 下一輪接任
 先查 git 目前 branch/commit → Notion CTS V5.2 → collab/STATUS.json → GitHub Actions 最近結果 → 如需程式修正取得 Windows 正式完整 ZIP 的原始 bytes 並核對 SHA → 修改非正式 candidate → 回歸 → 審查 → 交付。不要以此協作分支覆蓋 gh-pages 研究網站。
